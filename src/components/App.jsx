@@ -11,7 +11,7 @@ const App = () => {
       {characters.map(character => 
         <div className="App-content">
           <h2>{character.name}</h2>
-          <h2>impresionante</h2>
+          <h2>impresionante ddd </h2>
           <img src={character.image} alt={character.name} />
         </div>
       ))}
