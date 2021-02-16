@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Cart from './containers/Cart';
+import ProductList from './containers/ProductList';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload cristian adrian mones cazon.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+    return (
+        <div className="container">
+            <div className="row">
+                <div className="col-md-12">
+                    <h1>React+Redux Shopping Cart Example</h1>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-md-8">
+                    <ProductList />
+                </div>
+                <div className="col-md-4">
+                    <Cart />
+                </div>
+            </div>
+
+            <footer>
+                <small>
+                    made by <a href="https://twitter.com/krzysu">Kris Urbas</a>, source code available on <a href="https://github.com/krzysu/reactjs-shopping-cart">github</a>
+                </small>
+            </footer>
+        </div>
+    );
 }
 
 export default App;
