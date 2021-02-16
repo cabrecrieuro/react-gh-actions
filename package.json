@@ -1,7 +1,7 @@
 
 {
   "homepage":"https://cabrecrieuro.github.io/react-gh-actions",
-  "name": "ravenous",
+  "name": "react-gh-actions",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
